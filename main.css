@@ -1,0 +1,75 @@
+/* include all other scss files into main scss file. ex. below we are importing _profile.scss file*/
+.profile-img {
+  border-radius: 999px;
+  height: 200px;
+  width: 200px;
+  margin-top: 10px;
+  border: 5px solid seagreen; }
+
+h1 {
+  color: green; }
+
+p {
+  color: green; }
+
+nav ul {
+  background: #2c3e50;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+nav li {
+  display: inline-block; }
+
+nav a {
+  color: #ffffff;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: inline-block; }
+
+nav a:hover {
+  background: #16a085; }
+
+/* using extend keyword we can inherit styles like below - 
+    .panel properties wil be avilable into little & big panel */
+.panel, .little-panel, .big-panel {
+  border: 3px solid dodgerblue;
+  background: lightgreen;
+  margin: 10px; }
+
+.little-panel {
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 5px; }
+
+.big-panel {
+  -webkit-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  font-size: 32px;
+  padding: 20px; }
+
+.button, .jumbo-button, .light-button {
+  background: #16A085;
+  color: #FFFFFF;
+  padding: 5px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 8px; }
+
+.jumbo-button {
+  padding: 35px; }
+
+.light-button {
+  background: #21f0c8; }
+
+.footer {
+  width: 85.71429%;
+  float: left;
+  height: 62.5%;
+  background: #2c3e50;
+  color: #FFFFFF; }
